@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+    <startup> 
+        <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.7.1" />
+    </startup>
+  <appSettings>
+    <!--LifX Section-->
+    <add key="lifx_bearer" value=""/>
+    <add key="lifx_light_id" value=""/>
+    <!--LifX Section End-->
+    
+    <!--Nest Section-->
+    <add key="nest_bearer" value=""/>
+    <add key="nest_client_id" value=""/>
+    <add key="nest_client_secret" value=""/>
+    <add key="nest_auth_code" value=""/>
+    <add key="nest_thermostat_id" value="" />
+    <add key="nest_display_temp" value="true"/>
+    <add key="nest_temp_display_pos" value="5"/>
+    <!--Nest Section End-->
+  </appSettings>
+</configuration>
