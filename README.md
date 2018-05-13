@@ -10,6 +10,10 @@
 2. (optional) Create a Nest developer account and get an auth bearer token, client id, client secret, etc. (https://developers.nest.com/)
 3. Copy App.Config.Sample to App.Config, and place your authorization info into there
 
+### Dependencies:
+1. OpenStreamDeck (https://github.com/OpenStreamDeck)
+2. CommandLineParser (https://github.com/commandlineparser/commandline)
+
 ### Running the application from CMD/StreamDeck
 1. Once built, you can run the app via CMD by typing:
 `Autobot.exe --<command>=<option>`
@@ -38,9 +42,9 @@
   --version        Display version information.
  ```
 
-### Notes
+## Notes
 * If you don't want to use the SteamDeck pieces of the code, they're pretty easy to rip out. Then you'd just be left with a CLI for Nest and LifX
-### Caveats
+## Caveats
 I am not planning on supporting this beyond fiddling with it for my own purposes. 
 This was more a proof of concept / lazy attempt at making a home automation command console than it was an ongoing project 
 
