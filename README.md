@@ -11,7 +11,7 @@
 3. Copy App.Config.Sample to App.Config, and place your authorization info into there
 
 ### Dependencies:
-1. OpenStreamDeck (https://github.com/OpenStreamDeck)
+1. OpenStreamDeck (https://github.com/OpenStreamDeck) - If you want to write back service info to your Stream Deck
 2. CommandLineParser (https://github.com/commandlineparser/commandline)
 
 ### Running the application from CMD/StreamDeck
