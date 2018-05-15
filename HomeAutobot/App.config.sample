@@ -18,5 +18,10 @@
     <add key="nest_display_temp" value="true"/>
     <add key="nest_temp_display_pos" value="5"/>
     <!--Nest Section End-->
+
+    <!--Harmony Section-->
+    <add key="harmony_url" value="http://harmony_api:port"/>
+    <add key="harmony_slug" value="harmony-hub"/>
+    <!--Harmony Section End-->
   </appSettings>
 </configuration>

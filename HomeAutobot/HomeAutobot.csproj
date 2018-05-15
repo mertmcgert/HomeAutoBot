@@ -97,6 +97,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Automations\Harmony.cs" />
     <Compile Include="Automations\Lifx.cs" />
     <Compile Include="Automations\Nest.cs" />
     <Compile Include="Automations\WebResponse\LifxWebResponse.cs" />

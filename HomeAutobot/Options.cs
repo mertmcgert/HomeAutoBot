@@ -3,19 +3,22 @@
 namespace HomeAutomation
 {
 
-    public class Options
+    [Verb("harmony", HelpText = "harmony issue device command (also used for activity specific commands)")]
+    public class HarmonyDeviceOptions
     {
-        #region LifX Options
-        [Option("brightness", Required = false, HelpText = "lifx set brightness")]
-        public double? Brightness { get; set; }
+        [Option("device", Required = false, HelpText = "harmony issue device command")]
+        public string Device { get; set; }
 
-        [Option("color", Required = false, HelpText = "lifx set color (hex or color name)")]
-        public string Color { get; set; }
+        [Option("command", Required = false, HelpText = "harmony issue device command")]
+        public string Command { get; set; }
 
-        [Option("duration", Required = false, HelpText = "lifx set fade duration")]
-        public int? Duration { get; set; }
-        #endregion
+        [Option("activity", Required = false, HelpText = "harmony start activity")]
+        public string Activity { get; set; }
+    }
 
+    [Verb("nest", HelpText = "Nest commands")]
+    public class NestDeviceOptions
+    {
         #region Nest Options
         [Option("temperature", Required = false, HelpText = "nest set temperature")]
         public long? Temperature { get; set; }
@@ -32,5 +35,18 @@ namespace HomeAutomation
         [Option("fan", Required = false, HelpText = "nest set fan duration")]
         public int? Minutes { get; set; }
         #endregion
+    }
+
+    [Verb("lifx", HelpText = "Lifx commands")]
+    public class LifxDeviceOptions
+    {
+        [Option("brightness", Required = false, HelpText = "lifx set brightness")]
+        public double? Brightness { get; set; }
+
+        [Option("color", Required = false, HelpText = "lifx set color (hex or color name)")]
+        public string Color { get; set; }
+
+        [Option("duration", Required = false, HelpText = "lifx set fade duration")]
+        public int? Duration { get; set; }
     }
 }
